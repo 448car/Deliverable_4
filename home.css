@@ -1,0 +1,85 @@
+/**************
+     IS 448 Group project: Car reservation system
+
+      CSS File for the home page
+			Author: Deviga Valiyil
+**************/
+
+/* background of the wesite and basic font and size*/
+	body{
+		background-image: url(background.png);
+		font-size: 8pt;
+		font-family:Verdana, Tahoma, sans-serif;
+	}
+
+/*style for the title of the website*/
+  .titleBorder {
+       text-align: center;
+       font-family: Georgia;
+       font-size: 50pt;
+        line-height: 36px;
+        margin-top: 20px;
+				padding-left: 150px;
+				text-align: center;
+   }
+
+/*logo picture*/
+   .logo{
+     float:right;
+     width: 100px;
+   }
+
+/* style for the tagline in the title section - "reserve your car today" */
+  .tagline{
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 12pt;
+    color:#4169E1;
+  }
+
+/* style for the table with tabs of the website */
+  table{
+ 	 border: 1px solid black;
+ 	 background-color:#FFFFFF;
+ 	 height: 20px;
+   width: 100%;
+   text-align: center;
+   color:#4169E1;
+   font-weight: bold;
+  }
+
+/* plain blue border around the second section. Also has padding for the bottom*/
+  .blueborder {
+    border: 4px  solid #C2E9E9;
+    background-color: black;
+    padding:5px;
+    margin-top: 10px;
+		padding-bottom: 90px;
+   }
+
+/* style for the car image in the center */
+.imgfloat{
+  margin-top: 20px;
+  width: 540px;
+  border-radius: 5px;
+  padding-left: 350px;
+	padding-top: 20px;
+	float: center;
+ }
+
+/* style for the name of the car */
+.subtitles{
+	padding-left: 540px;
+  color: white;
+	text-align: center;
+
+ }
+
+ /* style for the second tagline - "get the carKeys to this beauty" */
+
+.secondtag{
+  font-family: cursive;
+  color: white;
+  font-size: 18pt;
+	text-align: center;
+}
