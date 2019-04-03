@@ -83,3 +83,9 @@
   font-size: 18pt;
 	text-align: center;
 }
+
+/* style for User Registration text placement*/
+
+.center{
+    text-align: center;
+}
