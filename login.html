@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="home.css" type="text/css"/>
+         
+    </head>
+    <body>
+         <div class="titleBorder">
+             <img class ="logo" src="logo.png">
+                 <h1>CarKeys</h1>
+        </div>
+       
+    <div>
+     	<table>
+    	   <tr>
+               <td><a href="home.html">HOME</a></td>
+       	        <td>ABOUT US</td>
+    		<td>VIEW CARS</td>
+                <td><a href="login.html">LOGIN</a></td>
+                <td><a href="UserReg.html">CREATE AN ACCOUNT</a></td>
+                <td><a href="contactus.html">CONTACT US</a></td>
+            </tr>
+    	</table>
+    </div>
+        
+        <div class="center">
+            
+            <p>
+                <br/>
+                <br/>
+                <br/>
+            Please login!
+            </p>
+        <!--Form for logging in.-->
+        ​<form action="UserReg.php" method="post">         
+            Username:
+            <br>
+            <input type="text" name="username" value="" required >
+            <br/> <br/>
+            Password:
+            <br>
+            <input type="text" name="password" value="" required > 
+            <br/> <br/>
+            <input type="submit" value="Submit">
+            <br/>
+        </form>
+        </div>
+    </body>
+</html>
