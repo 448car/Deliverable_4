@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            height: 900px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: bisque;
+            height: 100px;
+            width: 100%;
+            margin: 0;
+            position: sticky;
+            top: 0px;
+            background-image: url(Homepage/background.png);
+        }
+
+        .logo {
+            height: 50px;
+            width: 50px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 50px;
+        }
+
+        nav .horizontal-nav-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #F0F0F0;
+            font-weight: bold;
+            overflow: hidden;
+            display: flex;
+        }
+
+        nav .horizontal-nav-list li {
+            float: left;
+            border-top: 1px solid rgb(17, 14, 14);
+            border-right: 1px solid rgb(17, 14, 14);
+            flex: 1;
+            height: 42px;
+        }
+
+        nav .horizontal-nav-list li:hover {
+            background-color: #A9A9A9;
+        }
+
+        nav .horizontal-nav-list li a {
+            display: block;
+            color: #000000;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* --------styles for <main>'s content--------- */
+
+        main {
+            height: 800px;
+            background-color: white;
+            margin-top: 0;
+            background: url(Homepage/viewcarbackground.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+        }
+
+        .car-selection {
+            display: flex;
+        }
+
+        .car-selection .choice {
+            flex: 1;
+            font-size: 30px;
+            margin: 50px 20px 0 20px;
+            font-weight: bold;
+            
+        }
+
+        .car-selection p {
+            display: inline;
+        }
+
+        select {
+            font-size: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>CarKey</h1>
+        <nav>
+            <ul class="horizontal-nav-list">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">VIEW CARS</a></li>
+                <li><a href="#">LOGIN</a></li>
+                <li><a href="#">CONTACT US </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 style="border-bottom: 1px solid black; margin-bottom: 0">Choose your vehicle</h1>
+        <form action="appointment.php"class="car-selection">
+            <div class="choice">
+                <p>Brand:</p>
+                <select name="brands">
+                    <option value="">--Select brand--</option>
+                    <option value="volvo">Volvo XC90</option>
+                    <option value="saab">Saab 95</option>
+                    <option value="mercedes">Mercedes SLK</option>
+                    <option value="audi">Audi TT</option>
+                </select>
+            </div>
+
+            <div class="choice">
+                <p>Type:</p>
+                <select name="types">
+                    <option value="">--Select type--</option>
+                    <option value="suv">SUV</option>
+                    <option value="truck">Truck</option>
+                    <option value="sedan">Sedan</option>
+                    <option value="van">Van</option>
+                </select>
+            </div>
+
+            <div class="choice">
+                <p># of Seats:</p>
+                <select name="seats">
+                    <option value="">--Select # of seats--</option>
+                    <option value="2">2</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="7">7</option>
+                </select>
+            </div>
+            <input class="choice" type="submit" value="Submit">
+        </form>
+        </form>
+    </main>
+  
+</body>
+
+</html>
