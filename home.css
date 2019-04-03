@@ -89,3 +89,9 @@
 .center{
     text-align: center;
 }
+
+/* Bold Font */
+
+.bold{
+    font-weight: bold;
+}
