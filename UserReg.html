@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>User Registration</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="home.css" type="text/css"/>
+         
+    </head>
+    <body>
+         <div class="titleBorder">
+            <img class ="logo" src="logo.png"
+                 <h1>CarKeys</h1>
+        </div>
+       
+        <div class="center">
+            
+            <p>
+                <br/>
+                <br/>
+                <br/>
+            Please fill out the forms below to register an account with us!
+            </p>
+        <!--Form for the inputs to create an account.
+        If any of these, other than newsletter, are not completed it should not accept the confirm.-->
+        ​<form action="UserReg.php" method="post">         
+            Username:
+            <input type="text" name="username" value="" required >
+              <br/> <br/>
+            New Password:
+            <input type="text" name="password" value="" required > 
+              <br/> <br/>
+            Confirm Password:
+            <input type="text" name="confirmPassword" value="" required > 
+              <br/> <br/>
+            Email:
+            <input type="text" name="email" value="" required > 
+              <br/> <br/>
+            First Name: 
+            <input type="text" name="FirstName" value="" required > 
+              <br/> <br/>
+            Last Name: 
+            <input type="text" name="LastName" value="" required > 
+              <br/> <br/>
+            Address: 
+            <input type="text" name="Address" value="" required > 
+              <br/> <br/>
+            Phone Number: 
+            <input type="text" name="PhoneNumber" value=""> 
+              <br/> <br/>
+            <input type="checkbox" name="Newsletter" value="Newsletter" checked>
+            I would like to subscribe to the CarKeys newsletter!
+            <br/> <br/>
+            <input type="checkbox" name="UserAgree" value="UserAgree" required >
+            I have read and agree to the <a href="useragreement.html">user agreement. </a>
+            <br/> <br/>
+            <input type="submit" value="Submit">
+            <br/>
+        </form>
+        </div>
+    </body>
+</html>
