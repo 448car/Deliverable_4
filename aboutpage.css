@@ -1,0 +1,38 @@
+body{
+  background-image: url('background.png');
+  font-size: 20pt;
+  font-family:Georgia;
+}
+
+.teampics{
+  border-radius: 50%;
+ }
+
+.carbanner{
+   width: 100%;
+}
+
+ .subheadings{
+   color: #4169E1;
+   font-size: 25px;
+
+ }
+
+.location{
+  text-align:right;
+  float:right;
+}
+
+.address{
+ font-size: 25px;
+ font-family:inherit;
+}
+
+.names{
+  font-style:italic;
+ font-size: 12pt;
+ font-family:Georgia;
+ text-align: center;
+ word-spacing:80px;
+ padding-left: 31px;
+}
