@@ -1,9 +1,6 @@
-/*
-Author: Sonali Ghante
-*/
 body{
-  background-image: url('../images/background.png');
-  font-size: 20pt;
+  background-image: url('background.png');
+  font-size: 13pt;
   font-family:Georgia;
 }
 
@@ -18,13 +15,22 @@ body{
  .subheadings{
    color: #4169E1;
    font-size: 25px;
+}
 
- }
+table{
+ 	 border: 1px solid black;
+ 	 background-color:#FFFFFF;
+ 	 height: 20px;
+   width: 100%;
+   text-align: center;
+   color:#4169E1;
+   font-weight: bold;
+  }
 
-/* .location{
-Â Â text-align:right;
-Â Â float:right;
-} */
+.location{
+  text-align:right;
+  float:right;
+}
 
 .address{
  font-size: 25px;
@@ -32,7 +38,7 @@ body{
 }
 
 .names{
-font-style:italic;
+  font-style:italic;
  font-size: 12pt;
  font-family:Georgia;
  text-align: center;
