@@ -1,5 +1,8 @@
+/*
+Author: Sonali Ghante
+*/
 body{
-  background-image: url('background.png');
+  background-image: url('../images/background.png');
   font-size: 20pt;
   font-family:Georgia;
 }
@@ -18,10 +21,10 @@ body{
 
  }
 
-.location{
-  text-align:right;
-  float:right;
-}
+/* .location{
+Â Â text-align:right;
+Â Â float:right;
+} */
 
 .address{
  font-size: 25px;
@@ -29,7 +32,7 @@ body{
 }
 
 .names{
-  font-style:italic;
+font-style:italic;
  font-size: 12pt;
  font-family:Georgia;
  text-align: center;
