@@ -1,0 +1,91 @@
+/*
+Author: Phong Van Nguyen
+*/
+body {
+    margin: 0;
+    height: 900px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: bisque;
+    height: 100px;
+    width: 100%;
+    margin: 0;
+    position: sticky;
+    top: 0px;
+    background-image: url('../images/background.png');
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 50px;
+}
+
+nav .horizontal-nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #F0F0F0;
+    font-weight: bold;
+    overflow: hidden;
+    display: flex;
+}
+
+nav .horizontal-nav-list li {
+    float: left;
+    border-top: 1px solid rgb(17, 14, 14);
+    border-right: 1px solid rgb(17, 14, 14);
+    flex: 1;
+    height: 42px;
+}
+
+nav .horizontal-nav-list li:hover {
+    background-color: #A9A9A9;
+}
+
+nav .horizontal-nav-list li a {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* --------styles for <main>'s content--------- */
+
+main {
+    height: 800px;
+    background-color: white;
+    margin-top: 0;
+    background: url('../images/viewcarbackground.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.car-selection {
+    display: flex;
+}
+
+.car-selection .choice {
+    flex: 1;
+    font-size: 30px;
+    margin: 50px 20px 0 20px;
+    font-weight: bold;
+    
+}
+
+.car-selection p {
+    display: inline;
+}
+
+select {
+    font-size: 0.8em;
+}
