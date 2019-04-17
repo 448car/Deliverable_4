@@ -28,17 +28,24 @@
         if (mysqli_connect_errno()){
             exit("Error - could not connect to MySQL");}
             
+            
         $commentUsername =$_POST['Username'];
         $commentPassword = $_POST['Password'];
         $commentEmail = $_POST['Email'];
         $commentFirstName = $_POST['FirstName'];
         $commentLastName = $_POST['LastName'];
-
+        $commentCreditCard = $_POST['CreditCardNumber'];
+        $commentCVC = $_POST['CVC'];
+        $commentAddress = $_POST['Address'];
+        $commentZipcode = $_POST['ZipCode'];
+        $commentPhoneNum = $_POST['PhoneNumber'];
+        $commentCardName = $_POST['Name'];
+        
 ?>
     
 <?php 
-$constructed_query = "INSERT INTO UserRegDB (Username, Password, Email, FirstName, LastName)"
-        . "  values ('$commentUsername', '$commentPassword', '$commentEmail', '$commentFirstName', '$commentLastName')";
+$constructed_query = "INSERT INTO UserRegDB (Username, Password, Email, FirstName, LastName, CreditCardNum, ZipCode, PhoneNumber, BillingAddress, CVC, NameOnCard)"
+        . "  values ('$commentUsername', '$commentPassword', '$commentEmail', '$commentFirstName', '$commentLastName', '$commentCreditCard', '$commentZipcode', '$commentPhoneNum', '$commentAddress', '$commentCVC', '$commentCardName')";
 $result = mysqli_query($db, $constructed_query);
 ?>
     <div class="center">
