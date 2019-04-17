@@ -1,7 +1,3 @@
-<!--
-     IS 448 Group project: Car reservation system
-			Author: Dakota Sargent
--->
 <!DOCTYPE html>
 <html>
 
@@ -9,7 +5,7 @@
     <title>Login Page</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/home.css" type="text/css">
+    <link rel="stylesheet" href="home.css" type="text/css">
 </head>
 <!--Logo-->
 
@@ -41,19 +37,15 @@
             Please login!
         </p>
         <!--Form for logging in.-->
-        <form action="UserReg.php" method="post">
-            Username:
-            <br>
-            <input type="text" name="username" value="" required>
-            <br /> <br />
-            Password:
-            <br>
-            <input type="text" name="password" value="" required>
-            <br /> <br />
-            <input type="submit" value="Submit">
-            <br />
-        </form>
-    </div>
-</body>
 
+<form action="login.php" method="post">
+    <p>Username: <input type="text" name="username"></p>
+    <p>Password: <input type="password" name="password"></p>
+    <p><input type="submit" name="submit" value="Login"></p>
+</form>
+
+
+
+
+</body>
 </html>
