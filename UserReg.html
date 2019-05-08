@@ -3,131 +3,219 @@
 			Author: Dakota Sargent
 -->
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
-    <head>
-        <title>User Registration</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles/home.css" type="text/css"/>
-         
-    </head>
-    <body>
-         <div class="titleBorder">
-             <img class ="logo" src="images/logo.png" alt="">
-                 <h1>CarKeys</h1>
-        </div>
-       
-    <div>
-     	<table>
-    	   <tr>
-                <td><a href="index.html">HOME</a></td>
-                <td><a href="aboutpage.html">ABOUT US</a></td>
-                <td><a href="car-selection.html">VIEW CARS</a></td>
-                <td><a href="login.html">LOGIN</a></td>
-                <td><a href="UserReg.html">CREATE AN ACCOUNT</a></td>
-                <td><a href="contactus.html">CONTACT US</a></td>
-            </tr>
-    	</table>
-    </div>
-        
-        <div class="center">
-            
-            <p>
-                <br/>
-                <br/>
-                <br/>
-            <span class="bold"> Please fill out the forms below to register an account with us!</span>
-            </p>
-        <!--Form for the inputs to create an account.
+
+<head>
+	<title>User Registration</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/common-style.css" type="text/css" />
+	<link rel="stylesheet" href="styles/login.css" type="text/css" />		
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/prototype/1.6.0.3/prototype.js"></script>
+	<script src="UserReg.js">
+	function validate() {
+		/*check if empty*/
+	var x = document.forms["UserRegForm"]["Username"].value;
+	if (x == "") {
+		alert("Please fill out username field.");
+		return false;
+	}
+	/*check if empty*/
+	var y = document.forms["UserRegForm"]["Password"].value;
+	if (y == "") {
+		alert("Please fill out a new Password field.");
+		return false;
+	}
+	/*check if empty*/
+	var z = document.forms["UserRegForm"]["confirmPassword"].value;
+	if (z == "") {
+		alert("Please confirm your new Password field.");
+		return false;
+	}
+	/* Passwords need to match*/
+	if (z != y) {
+		alert("Passwords don't match!")
+		return false;
+	}
+	/*check if empty*/
+	var a = document.forms["UserRegForm"]["Email"].value;
+	if (a == "") {
+		alert("Please provide us with your email..");
+		return false;
+	}
+	/*check if empty*/
+	var qq = document.forms["UserRegForm"]["FirstName"].value;
+	if (qq == "") {
+		alert("Please tell us your first name.");
+		return false;
+	}
+	/*check if empty*/
+	var q = document.forms["UserRegForm"]["LastName"].value;
+	if (q == "") {
+		alert("Please tell us your last name.");
+		return false;
+	}
+	/*check if empty*/
+	var w = document.forms["UserRegForm"]["Name"].value;
+	if (w == "") {
+		alert("Please fill out your name as it appears on the card.");
+		return false;
+	}
+	/*check if empty*/
+	var t = document.forms["UserRegForm"]["CreditCardNumber"].value;
+	if (t == "") {
+		alert("Please enter a credit card number.");
+		return false;
+	}
+	/*check if empty*/
+	var g = document.forms["UserRegForm"]["CVC"].value;
+	if (g == "") {
+		alert("Please enter a CVC number.");
+		return false;
+	}
+	/*check if CVC is correct length*/
+	var gg = g.length;
+	if (gg != 3){
+		alert("Incorrect CVC");
+		return false;
+	}
+	/*check if empty*/
+	var no = document.forms["UserRegForm"]["Address"].value;
+	if (no == "") {
+		alert("Please enter your billing address.");
+		return false;
+	}
+	/*check if empty*/
+	var yes = document.forms["UserRegForm"]["Zipcode"].value;
+	if (yes == "") {
+		alert("Please enter your Zipcode.");
+		return false;
+	}
+	/*check if empty*/
+	var yarr = document.forms["UserRegForm"]["PhoneNumber"].value;
+	if (yarr == "") {
+		alert("Please fill out your phone number.");
+		return false;
+	}
+}
+
+/*AJAX*/
+
+</script>
+
+
+</head>
+
+<body>
+  <header>
+    <h1><img alt="" class="logo" src="images/logo.png">CarKeys</h1>
+    <nav>
+      <ul class="horizontal-nav-list">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="aboutpage.html">ABOUT US</a></li>
+        <li><a href="car-selection.html">VIEW CARS</a></li>
+        <li><a href="login.html">LOGIN</a></li>
+        <li><a href="UserReg.html">CREATE AN ACCOUNT</a></li>
+        <li><a href="contactus.html">CONTACT US </a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!--Form for the inputs to create an account.
         If any of these, other than newsletter, are not completed it should not accept the confirm.-->
-        ​<form action="UserReg.php" method="post">         
-            Username: <br/>
-            <input type="text" name="Username" value="" required >
-              <br/> <br/>
-            New Password: <br/>
-            <input type="text" name="Password" value="" required > 
-              <br/> <br/>
-            Confirm Password: <br/>
-            <input type="text" name="confirmPassword" value="" required > 
-              <br/> <br/>
-            Email:<br/>
-            <input type="text" name="Email" value="" required > 
-              <br/> <br/>
-            First Name:<br/>
-            <input type="text" name="FirstName" value="" required > 
-              <br/> <br/>
-            Last Name: <br/>
-            <input type="text" name="LastName" value="" required > 
-              <br/> <br/>
-              <br/>
-              <span class="bold">Billing Information</span>
-                  <br/> <br/>
-            Name as it Appears on the Card:<br/>
-            <input type="text" name="Name" value="" required >
-            <br/><br/>
-            Credit Card Number: <br/>
-            <input type="text" name="CreditCardNumber" value="" required > 
-            <br/> <br/>
-            Card Expiration: <br/>
-            <select name='expireMM'>
-                <option value=''>Month</option>
-                <option value='01'>January</option>
-                <option value='02'>February</option>
-                <option value='03'>March</option>
-                <option value='04'>April</option>
-                <option value='05'>May</option>
-                <option value='06'>June</option>
-                <option value='07'>July</option>
-                <option value='08'>August</option>
-                <option value='09'>September</option>
-                <option value='10'>October</option>
-                <option value='11'>November</option>
-                <option value='12'>December</option>
-            </select> 
-            
-            <select name='expireYY' >
-                <option value=''>Year</option>
-                <option value='19'>2019</option>
-                <option value='20'>2020</option>
-                <option value='21'>2021</option>
-                <option value='22'>2022</option>
-                <option value='23'>2023</option>
-                <option value='24'>2024</option>
-                <option value='25'>2025</option>
-                <option value='26'>2026</option>
-                <option value='27'>2027</option>
-                <option value='28'>2028</option>
-                <option value='29'>2029</option>
-                <option value='30'>2030</option>
-            </select> 
-            <input type="hidden" name="expire">
-            <br/><br/>
-            CVC: <br/>
-            <input type="text" name="CVC" value="" required > 
-            <br/><br/>
-            Billing Address: <br/>
-            <input type="text" name="Address" value="" required > 
-              <br/> <br/>
-            Zip Code: <br/>
-            <input type="text" name="ZipCode" value="" required > 
-              <br/><br/>
-            Phone Number: <br/>
-            <input type="text" name="PhoneNumber" value="" required > 
-              <br/> <br/>
-            <input type="checkbox" name="Newsletter" value="Newsletter" checked>
-            I would like to subscribe to the CarKeys newsletter!
-            <br/> <br/>
-            <input type="checkbox" name="UserAgree" value="UserAgree" required >
-            I have read and agree to the <a href="useragreement.html">user agreement. </a>
-            <br/> <br/>
-            <input type="submit" value="Submit">
-            <br/>
-        </form>
-        </div>
-    </body>
+		
+    ​<form name="UserRegForm" action="UserReg.php" onsubmit="return validate()" method="post" id="submit">
+      Username: <br />
+      <input type="text" name="Username" value="" >
+      <br /> <br />
+      New Password: <br />
+      <input type="text" name="Password" value="" >
+      <br /> <br />  
+      Confirm Password: <br />
+      <input type="text" name="confirmPassword" value="" >
+      <br /> <br />
+      Email:<br />
+      <input type="text" name="Email" value="" >
+      <br /> <br />
+      First Name:<br />
+      <input type="text" name="FirstName" value="" >
+      <br /> <br />
+      Last Name: <br />
+      <input type="text" name="LastName" value="" >
+      <br /> <br />
+      <br />
+      <span class="bold">Billing Information</span>
+      <br /> <br />
+      Name as it Appears on the Card:<br />
+      <input type="text" name="Name" value="" >
+      <br /><br />
+      Credit Card Number: <br />
+      <input type="text" name="CreditCardNumber" value="" >
+      <br /> <br />
+      Card Expiration: <br />
+      <select name='expireMM'>
+        <option value=''>Month</option>
+        <option value='01'>January</option>
+        <option value='02'>February</option>
+        <option value='03'>March</option>
+        <option value='04'>April</option>
+        <option value='05'>May</option>
+        <option value='06'>June</option>
+        <option value='07'>July</option>
+        <option value='08'>August</option>
+        <option value='09'>September</option>
+        <option value='10'>October</option>
+        <option value='11'>November</option>
+        <option value='12'>December</option>
+      </select>
+
+      <select name='expireYY'>
+        <option value=''>Year</option>
+        <option value='19'>2019</option>
+        <option value='20'>2020</option>
+        <option value='21'>2021</option>
+        <option value='22'>2022</option>
+        <option value='23'>2023</option>
+        <option value='24'>2024</option>
+        <option value='25'>2025</option>
+        <option value='26'>2026</option>
+        <option value='27'>2027</option>
+        <option value='28'>2028</option>
+        <option value='29'>2029</option>
+        <option value='30'>2030</option>
+      </select>
+      <input type="hidden" name="expire">
+      <br /><br />
+      CVC: <br />
+      <input type="text" name="CVC" value="" >
+      <br /><br />
+	  Zip Code: <br />
+      <input type="text" name="ZipCode" value="" >
+      <br /><br />
+	  City: <br />
+      <input type="text" name="City" value="" >
+      <br /><br /> 
+	  State: <br />
+      <input type="text" name="State" value="" >
+      <br /><br />
+      Billing Address: <br />
+      <input type="text" name="Address" value="" >
+      <br /> <br />
+      Phone Number: <br />
+      <input type="text" name="PhoneNumber" value="" >
+      <br /> <br />
+      <input type="checkbox" name="Newsletter" value="Newsletter" checked>
+      I would like to subscribe to the CarKeys newsletter!
+      <br /> <br />
+      <input type="checkbox" name="UserAgree" value="UserAgree" >
+      I have read and agree to the <a href="useragreement.html">user agreement. </a>
+      <br /> <br />
+      <input type="submit" value="Submit">
+      <br />    
+    </form>
+	
+  </main>
+
+</body>
+
 </html>
