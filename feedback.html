@@ -6,6 +6,8 @@
 
 <title> Feedback </title>
 <link rel="stylesheet" type="text/css" href="feedback.css" />
+<script type = "text/javascript" src = "feedback.js">
+</script>
 </head>
 <body>
   <div class="PostDiv">
@@ -15,21 +17,22 @@
 
 			<p>
 				Name: <br/>
-				<input type="text" name="name" size="50" maxlength="50" />
+				<input type="text" name="name" size="50" maxlength="50" id ="name"/>
 			<br/>
 			<br/>
 				Comment:
-				<br/> <textarea name="comment" rows="15" cols="60"> Write here..</textarea>
+			<br>
+				<textarea id = "comment" name="comment" rows="15" cols="60"> Write here...</textarea>
 			<br/>
 			<br/>
-
 			</p>
 
+		</p>
 
 			<p>
-				<input type="submit" value="submit"/>
+				<input type="submit"  value="submit" id = "submit"/>
 
-			</P>
+			</p>
 
 		</form>
 
