@@ -1,0 +1,54 @@
+<!--
+     IS 448 Group project: Car reservation system
+			Author: Dakota Sargent
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/common-style.css" type="text/css">
+    <link rel="stylesheet" href="styles/login.css" type="text/css">
+    <script type = "text/javascript" src = "login.js" >
+</script>
+
+</head>
+<!--Logo-->
+
+<body>
+    <header>
+        <h1><img alt="" class="logo" src="images/logo.png">CarKeys</h1>
+        <nav>
+            <ul class="horizontal-nav-list">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="aboutpage.html">ABOUT US</a></li>
+                <li><a href="car-selection.html">VIEW CARS</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="UserReg.html">CREATE AN ACCOUNT</a></li>
+                <li><a href="contactus.html">CONTACT US </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+          <!--Form for logging in.-->
+          <form action="login.php" method="post" >
+            <br>
+            <p>Username: <input type="text" name="username" id = "username"></p>
+            <br /> <br />
+            <br>
+            <p>Password: <input type="password" name="password" id = "password"></p>
+            <br /> <br />
+            <p><input type="submit" name="login" value="Login" id ="submit"></p>
+            <br />
+        </form>
+
+
+
+
+    </main>
+</body>
+
+</html>
