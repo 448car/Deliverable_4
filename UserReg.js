@@ -1,4 +1,9 @@
-
+/*
+     IS 448 Group project: Car reservation system
+			Author: Dakota Sargent
+*/
+				
+				
 	function validate() {
 		/*check if empty*/
 	var x = document.forms["UserRegForm"]["Username"].value;
